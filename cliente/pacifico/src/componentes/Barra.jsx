@@ -34,7 +34,6 @@ const Barra = () => {
       <div class="navbar bg-base-100">
         <div class="flex-1">
           <div className={styles.logo}>
-            <img src="/icono.png" alt="Logo de la página" />
             <img src="/Encabezado.jpeg" alt="Logo de la página" />
           </div>
         </div>
