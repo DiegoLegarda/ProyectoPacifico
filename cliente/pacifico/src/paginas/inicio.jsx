@@ -25,10 +25,12 @@ const Inicio = () => {
             </div>
         </div>
         <div>
-            <img src='Expertos.jpeg'></img>
+            <img src='Expertos.jpeg'></img>        
+        
+            <img src='ProductosServicios.jpeg'></img>
         </div>
         <div>
-            <img src='ProductosServicios.jpeg'></img>
+            <img src='Aliados.jpeg' alt='aliados'></img>
         </div>        
         </>
     );

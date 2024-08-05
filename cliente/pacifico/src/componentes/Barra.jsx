@@ -35,14 +35,15 @@ const Barra = () => {
         <div class="flex-1">
           <div className={styles.logo}>
             <img src="/icono.png" alt="Logo de la página" />
+            <img src="/Encabezado.jpeg" alt="Logo de la página" />
           </div>
         </div>
         <div class="flex-none">
           <ul class="menu menu-horizontal px-1">
             <li><Link to="/inicio">Inicio</Link></li>
             <li><Link to="/productos">Productos</Link></li>
-            <li><Link to="/registro">Servicios</Link></li>
-            <li><Link to="/entrada">Blog</Link></li>
+            <li><Link to="/servicios">Servicios</Link></li>
+            <li><Link to="/contacto">Contacto</Link></li>
           </ul>
           
         </div>

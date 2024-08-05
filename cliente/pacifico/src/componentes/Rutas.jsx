@@ -1,8 +1,8 @@
 import Estructura from "../paginas/Estructura";
 import Inicio from "../paginas/inicio";
-import Acerca from "../paginas/productos";
-import Registro from "../paginas/registro";
-import Entrada from "../paginas/Entrada";
+import Productos from "../paginas/productos";
+import Servicios from "../paginas/Servicios";
+import Contacto from "../paginas/Contacto";
 import Prueba from "../paginas/prueba";
 import { createBrowserRouter } from "react-router-dom";
 export const Rutas = createBrowserRouter([
@@ -10,10 +10,11 @@ export const Rutas = createBrowserRouter([
     path: "/",
     element: <Estructura />,
     children: [
+      { path: "/", element: <Inicio /> },
       { path: "/inicio", element: <Inicio /> },
-      { path: "/productos", element: <Acerca /> },
-      { path: "/entrada", element: <Entrada />},
-      { path: "/registro", element: <Registro /> },
+      { path: "/productos", element: <Productos /> },
+      { path: "/contacto", element: <Contacto />},
+      { path: "/servicios", element: <Servicios /> },
       { path: "/prueba", element: <Prueba /> },
     ],
   },

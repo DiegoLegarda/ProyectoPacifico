@@ -17,6 +17,9 @@ function Acerca() {
         <div>
             <img src='Productos3.jpeg' alt='productos'></img>
         </div>
+        <div>
+            <img src='Productos4.jpeg' alt='productos'></img>
+        </div>
         </>
     )
 }
