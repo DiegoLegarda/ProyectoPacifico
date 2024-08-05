@@ -1,7 +1,7 @@
 @value colors: './colores.module.css';
 @value fuente,fondo,fondo1,fondo2,sombra,borde from colors;
 header{
-    background-color:fondo;       
+    background-color:white;       
     padding: 10px 20px;
 }
 .contenedor{

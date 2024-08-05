@@ -1,6 +1,6 @@
 import Estructura from "../paginas/Estructura";
 import Inicio from "../paginas/inicio";
-import Acerca from "../paginas/acerca";
+import Acerca from "../paginas/productos";
 import Registro from "../paginas/registro";
 import Entrada from "../paginas/Entrada";
 import Prueba from "../paginas/prueba";
@@ -11,7 +11,7 @@ export const Rutas = createBrowserRouter([
     element: <Estructura />,
     children: [
       { path: "/inicio", element: <Inicio /> },
-      { path: "/acerca", element: <Acerca /> },
+      { path: "/productos", element: <Acerca /> },
       { path: "/entrada", element: <Entrada />},
       { path: "/registro", element: <Registro /> },
       { path: "/prueba", element: <Prueba /> },

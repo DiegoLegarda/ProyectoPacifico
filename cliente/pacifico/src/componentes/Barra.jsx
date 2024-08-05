@@ -1,13 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from "../Estilos/barra.module.css";
-
+//import "../index.css";
 
 
 const Barra = () => {
 
   const [tema, setTema] = React.useState("ligth");
+  const [estado, setEstado] = React.useState(true);
 
+  const funcionManejo = () => {
+    setEstado(!estado);
+    if (estado === true) {
+      console.log("compra realizada");
+    }
+    else {
+      console.log("compra cancelada");
+
+    }
+  }
   const temaLigth = () => {
     setTema("ligth");
   }
@@ -17,22 +28,27 @@ const Barra = () => {
   }
 
   return (
-    
-    <header>
-      <div className={styles.contenedor}>
-        <div className={styles.logo}>
-          <img src="/icono.png" alt="Logo de la página" />
-        </div>
-        <nav>
-          <Link to="/inicio">Inicio</Link>
-          <Link to="/acerca">Acerca</Link>
-          <Link to="/registro">Registro</Link>
-          <Link to="/entrada">Entrar</Link>
-          <Link to="/prueba">prueba</Link>          
-        </nav>
 
+    <header>
+
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div className={styles.logo}>
+            <img src="/icono.png" alt="Logo de la página" />
+          </div>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><Link to="/inicio">Inicio</Link></li>
+            <li><Link to="/productos">Productos</Link></li>
+            <li><Link to="/registro">Servicios</Link></li>
+            <li><Link to="/entrada">Blog</Link></li>
+          </ul>
+          
+        </div>
       </div>
-    </header>    
+    </header>
+
   );
 };
 export default Barra;

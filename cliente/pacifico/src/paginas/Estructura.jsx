@@ -25,8 +25,7 @@ function Estructura() {
                         <Outlet />
                     </div>
                 </main>
-                <Pie />  
-
+                <Pie /> 
         </div>
     )
 }
