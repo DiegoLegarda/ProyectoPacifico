@@ -1,20 +1,23 @@
 import React from "react"
+import { Link } from "react-router-dom"; 
 
-function Card(){
-
-    return(
-<div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+function Card ({ title, imageUrl, link }) {
+  return (
+    <div className="p-4">
+        <h2 className="text-xl font-semibold mb-2 text-center">{title}</h2>
+        <div className="flex justify-center">
+    <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto rounded-xl overflow-hidden shadow-lg">
+      <img
+        className="w-full h-48 object-cover object-center"
+        src={imageUrl}
+        alt={title}
+      />      
+          <Link className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300" to={link}>Ver más</Link>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-    );
-
-}
+    
+  );
+};
 
 export default Card;
