@@ -8,7 +8,7 @@ const Barra = () => {
 
   const [tema, setTema] = React.useState("ligth");
   const [isOpen, setIsOpen] = React.useState(false);
-  
+
   const temaLigth = () => {
     setTema("ligth");
   }
@@ -16,7 +16,7 @@ const Barra = () => {
   const temaDark = () => {
     setTema("dark");
   }
-  
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,7 +27,18 @@ const Barra = () => {
       <div className="navbar bg-base-100 flex flex-col md:flex-row items-center justify-between p-4">
         <div className="flex-1 flex justify-between md:justify-start mb-4 md:mb-0 w-full md:w-auto">
           <div className={styles.logo}>
-            <img src="/Encabezado.jpeg" alt="Logo de la página" className="h-12 md:h-16" />
+            <div className="card card-side bg-base-100 shadow-xl">
+              <figure>
+                <img className={styles.logo}
+                  src="Encabezado.jpeg"
+                  alt="Movie" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Redes y Tecnologia</h2>
+                <p>del pacífico</p>
+
+              </div>
+            </div>
           </div>
           <button
             className="block md:hidden text-gray-700 focus:outline-none"
@@ -59,9 +70,8 @@ const Barra = () => {
           </button>
         </div>
         <div
-          className={`${
-            isOpen ? 'block' : 'hidden'
-          } md:block flex-none w-full md:w-auto`}
+          className={`${isOpen ? 'block' : 'hidden'
+            } md:block flex-none w-full md:w-auto`}
         >
           <ul className="menu menu-horizontal px-1 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
             <li><Link to="/inicio" className="text-lg md:text-base">Inicio</Link></li>
