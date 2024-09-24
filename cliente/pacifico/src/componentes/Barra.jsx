@@ -29,14 +29,14 @@ const Barra = () => {
           <div className={styles.logo}>
             <div className="card card-side bg-base-100 shadow-xl">
               <figure>
-                <img className={styles.logo}
-                  src="Encabezado.jpeg"
+                <img
+                  src="logosinfondo.png"
                   alt="Movie" />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">Redes y Tecnologia</h2>
-                <p>del pacífico</p>
-
+                <h2 className="card-title">Redes y Tecnología del Pacifico</h2>
+                <p>Soluciones inteligentes que transforman</p>
+            
               </div>
             </div>
           </div>
