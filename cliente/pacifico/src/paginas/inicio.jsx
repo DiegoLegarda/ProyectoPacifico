@@ -28,7 +28,8 @@ const Inicio = () => {
 
             </div>
             <div>
-                <img src='Expertos.jpeg' alt='servicios'></img>
+                <h1 className='Titulo'>Expertos en tecnología</h1>
+                <p className='Parrafo'>Empresa especializada en asistencia tecnologíca </p>
             </div>
             <div className="card card-side bg-base-100 shadow-xl">
                 <figure>
@@ -59,16 +60,24 @@ const Inicio = () => {
                 </div>
             </div>
             <div>
-                <img src='Metodologia.jpg' alt='servicios'></img>
+                <h1 className='Titulo'>Metodología eficaz de atención y soporte técnico</h1>
+                <p className='Parrafo'>Estrategía integral que optimiza la atención al cliente y el soporte técnico, garantizando soluciones personalizadas, rápidas y eficientes en cada etapa del servicio</p>
             </div>
             <div>
                 <img src='Metodologia1.jpg' alt='servicios'></img>
             </div>
             <div>
-                <img src='Empresas1.jpg' alt='servicios'></img>
+                <h1 className='Titulo'>Empresas aliadas</h1>
+                <p className='Parrafo'>Fortalecemos nuestro servicio con el respaldo de empresas reconocidas</p>
             </div>
             <div>
                 <img src='Empresas2.jpg' alt='servicios'></img>
+            </div>
+            <div>
+                <h1 className='Titulo'>Amplia experiencia en empresas como:</h1>
+            </div>
+            <div>
+                <img src='Diagramaexperiencia.jpg' alt='servicios'></img>
             </div>
         </>
     );
