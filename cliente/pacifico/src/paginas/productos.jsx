@@ -1,6 +1,7 @@
 import React from 'react';
 //import {Button, Card, Container } from 'react-bootstrap';
-
+import Productos from '../componentes/productos';
+import { Link } from 'react-router-dom';
 
 function Acerca() {
     return (
@@ -35,7 +36,7 @@ function Acerca() {
                         </div>
                     </div>
                 </div>
-        
+
             </div>
             <div>
                 <img src='Productos1.jpeg' alt='productos'></img>
@@ -49,6 +50,33 @@ function Acerca() {
             <div>
                 <img src='Productos4.jpeg' alt='productos'></img>
             </div>
+            <div className="p-8 bg-gradient-to-r from-blue-100 to-blue-200">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <Productos
+                        imagen="Prod1.png"
+                        titulo="UPS"
+                        descripcion="Variedad en marcas y modelos con diferentes potencias. Interactivas y online."
+                    />
+                    <Productos
+                        imagen="Prod2.png"
+                        titulo="Red UPS"
+                        descripcion="Variedad en marcas y modelos con diferentes potencias. Interactivas y online."
+                    />
+                    <Productos
+                        imagen="Prod3.png"
+                        titulo="Bateria UPS"
+                        descripcion="Variedad en marcas y modelos con diferentes potencias. Interactivas y online."
+                    />
+                </div>
+
+                {/* Contenedor del botón centrado */}
+                <div className="flex justify-center mt-8">
+                    <Link to="/contacto">
+                        <button className="btn btn-primary">Quieres que te llamemos</button>
+                    </Link>
+                </div>
+            </div>
+
         </>
     )
 }
