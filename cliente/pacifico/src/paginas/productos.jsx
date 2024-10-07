@@ -63,7 +63,7 @@ function Acerca() {
                         descripcion="Variedad en marcas y modelos con diferentes potencias. Interactivas y online."
                     />
                     <Productos
-                        imagen="Prod3.png"
+                        imagen="Productos.jpeg"
                         titulo="Bateria UPS"
                         descripcion="Variedad en marcas y modelos con diferentes potencias. Interactivas y online."
                     />
